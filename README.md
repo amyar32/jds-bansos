@@ -14,4 +14,5 @@ Implementasi challange/tugas aplikasi yang dapat digunakan untuk menginput data-
 - Tailwind
 - Styling berdasarkan Jabar Design System
 
-## Useful Links
+## Demo
+- [Live Demo](https://zingy-khapse-30f568.netlify.app/) - Proyek yang sudah dideploy ke Netlify

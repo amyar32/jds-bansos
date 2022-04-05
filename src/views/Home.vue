@@ -15,26 +15,30 @@
         </p>
       </div>
 
+      <div class="flex justify-center">
+        <input
+          type="text"
+          class="h-10 text-center font-semibold w-full rounded-xl text-black px-5 ring-2 ring-green-500"
+          placeholder="Komplek Panghegar"
+        />
+      </div>
+
       <div class="space-x-4">
         <router-link to="/buat"
           ><button
-            class="transition box-border bg-green-600 rounded-md py-2 px-6 hover:bg-green-500 active:ring-2 ring-yellow-300"
+            class="transition box-border bg-green-600 rounded-xl py-2 px-6 hover:bg-green-500 active:ring-2 ring-yellow-300"
           >
             <span class="font-semibold text-white">Buat Laporan</span>
-          </button></router-link
-        >
-        <router-link to="/bantuan"
-          ><button
-            class="transition box-border bg-gray-500 rounded-md py-2 px-6 hover:bg-gray-400 active:ring-2 ring-yellow-300"
-          >
-            <span class="font-semibold text-white">Bantuan</span>
           </button></router-link
         >
       </div>
     </div>
 
     <div class="flex justify-center w-full">
-      <span class="text-center text-xs pb-8">©2022 Amyar @JCC. All rights reserved.</span>
+      <span class="text-center text-xs pb-8"
+        >©2022 <a href="http://github.com/amyar32" target="_blank">Amyar</a> @JCC. All
+        rights reserved.</span
+      >
     </div>
   </div>
 </template>

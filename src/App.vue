@@ -5,7 +5,10 @@
     >
       <LayoutNavbar />
       <ToggleDarkMode :handleClick="toggleDarkMode" />
-      <router-view />
+
+      <transition name="page" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
@@ -39,3 +42,19 @@ export default {
   },
 };
 </script>
+
+<style>
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+</style>

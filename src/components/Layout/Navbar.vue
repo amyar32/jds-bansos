@@ -1,7 +1,7 @@
 <template>
   <!-- kontainer -->
   <div
-    class="transition flex flex-row items-center justify-between top-0 w-full h-16 px-6 bg-white shadow-xl fixed dark:bg-gray-800"
+    class="transition-all flex flex-row items-center justify-between top-0 w-full h-16 px-6 bg-white shadow-xl fixed dark:bg-gray-800"
   >
     <!-- child pertama -->
     <div class="flex flex-row space-x-2 items-center">
@@ -32,10 +32,7 @@ export default {
 
   data() {
     return {
-      navigationList: [
-        { name: "Buat Laporan", route: "/buat" },
-        { name: "Tentang", route: "/tentang" },
-      ],
+      navigationList: [{ name: "Buat Laporan", route: "/buat" }],
     };
   },
 };

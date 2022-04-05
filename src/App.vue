@@ -21,6 +21,11 @@ export default {
     ToggleDarkMode,
   },
 
+  metaInfo: {
+    title: "Beranda",
+    titleTemplate: "%s | E-Bansos Jabar Digital Service",
+  },
+
   computed: {
     ...mapGetters({
       darkMode: "config/darkMode",

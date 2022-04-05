@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="darkMode ? 'dark' : ''">
     <div
-      class="transition w-screen min-h-screen bg-white text-gray-800 pt-20 dark:text-white dark:bg-gray-800"
+      class="transition w-screen min-h-screen bg-white text-gray-800 dark:text-white dark:bg-gray-800"
     >
       <LayoutNavbar />
       <ToggleDarkMode :handleClick="toggleDarkMode" />

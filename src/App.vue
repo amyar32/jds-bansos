@@ -1,32 +1,36 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div id="app" :class="darkMode ? 'dark' : ''">
+    <div
+      class="transition w-screen min-h-screen bg-white text-gray-800 pt-20 dark:text-white dark:bg-gray-800"
+    >
+      <LayoutNavbar />
+      <ToggleDarkMode :handleClick="toggleDarkMode" />
+      <router-view />
+    </div>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import LayoutNavbar from "@/components/Layout/Navbar";
+import ToggleDarkMode from "@/components/Layout/ToggleDarkMode";
+import { mapGetters, mapActions } from "vuex";
 
-nav {
-  padding: 30px;
-}
+export default {
+  components: {
+    LayoutNavbar,
+    ToggleDarkMode,
+  },
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  computed: {
+    ...mapGetters({
+      darkMode: "config/darkMode",
+    }),
+  },
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  methods: {
+    ...mapActions({
+      toggleDarkMode: "config/toggleDarkMode",
+    }),
+  },
+};
+</script>

@@ -178,7 +178,7 @@
               class="w-full flex flex-row items-center py-3 px-7 space-x-6 text-white text-blue rounded-lg shadow-md tracking-wide uppercase cursor-pointer hover:bg-yellow-500 hover:text-white"
             >
               <span class="text-base leading-normal lg:text-xs"
-                ><p v-if="!payload.attachments.ktp">Photo KK</p>
+                ><p v-if="!payload.attachments.ktp">Photo KTP</p>
                 <p v-else>Photo Terpilih</p></span
               >
               <input

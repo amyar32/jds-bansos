@@ -20,3 +20,4 @@ Implementasi challange/tugas aplikasi fase challenge JCC yang dapat digunakan un
 ## Demo
 
 - [Live Demo](https://zingy-khapse-30f568.netlify.app/) - Proyek yang sudah dideploy ke Netlify
+- [Video Demo](https://youtu.be/c5dU5DG9YyE) - Video demonstrasi aplikasi
